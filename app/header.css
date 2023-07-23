@@ -9,8 +9,9 @@
 }
 h1{
     display:inline-block;
-    color:red;
+    color:white;
     padding:1px;  
+    
 }
 .firstr{
     border:solid 1px black;
@@ -52,8 +53,9 @@ h1{
 .b{
     height:100%;
     width:40px;
+    text-align:center;
     border:solid 1px white;
-    float:left; 
+    float:left;
 }
 .c{
     height:100%;
@@ -73,12 +75,68 @@ h1{
     width:130px;
     border:solid 1px white;
  
-    margin-left:20px;
+  
     float:left;  
 }
 .s{
     height:20px;
     width:100px;
     border:solid 1px white;
+}
+.form1{
+    border:solid 1px black;
+    height:130px;
+    width:900px;
+    margin:auto;
+    background-color:black;
+    color:white;
+    padding-left:100px;
+    padding-top:50px;
+} 
+.p{
+    color:white;
+    margin-top:20px;
+}  
+.form2{
+    border:solid 1px black;
+    width:1000px;
+    margin:auto;
+    height:100px;
+    background-color:black; 
+    
+}
+.form3{
+    border:solid 1px white;
+    width:800px;
+    margin:auto;
+    background-color:black;
+    height:900px; 
+}
+.footer{
+    border:solid 1px white;
+    width:1000px;
+    margin:auto;
+    background-color:black;
+    height:120px; 
+}
+.lab1{
+    padding-left:50px;
+    color:white;
+    padding-top:20px;
+}
+.in{
+    padding-left:50px;
+    padding-bottom:20px;
+}
+.space{
+    padding-left:50px;
+}
+.submit{
+    padding-left:50px;
+    padding-top:50px;
+}
+.hi{
+    padding-left:50px;
+    padding-top:20px;
 }
 

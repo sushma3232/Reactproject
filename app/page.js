@@ -1,45 +1,36 @@
 "use client"
+import Buttons from "./button.js"
 import {useState} from "react"
 import {movies} from './details.js';
 import Logo from './logo.js';
 import  './header.css';
 import Movierow from './movie_row.js';
+import Addmovie from "./addmovie.js"
+import Form from "./addmovie.js"
 export default function App(){
-    const[name,setName]=useState(movies)
-    function handleDeleteMovie(id){
-        const newMovieList=name.filter(movie =>movie.id!=id);
-        setName(newMovieList)
+    const [cenimas,setCenimas]=useState(movies);
+    function handleRating(id,likes){
+        const updatedMovies=cenimas.map((movie)=>{
+            if (movie.id===id){
+                return{
+                    ...movie,votes:likes
+                }
+            }
+            return movie
+       });
+       const sortedMovies=updatedMovies.sort((a,b)=>b.votes-a.votes)
+       setCenimas(sortedMovies);
     }
-    const Buttons=(props)=>{ 
-        const[num, setNum]=useState(0);
-        function voteUp(){
-            setNum(num+1)       
-        };
-        function voteDown(){
-            setNum(num-1)        
-        };
-        return (
-            <>
-                <div className="B">
-                    <div className="a">
-                        <button onClick={voteUp}><img src="Icon - Like.svg" alt="Header"/></button> 
-                    </div> 
-                    <div className="b">
-                        <p>{num}</p>
-                    </div>
-                    <div className="c">
-                        <button onClick={voteDown}><img src="Icon - disLike.svg" alt="Header"/> </button>
-                    </div>
-                </div>
-            </>
-        );
-     };
-    
+    function handleDeleteMovie(id){
+        const newMovieList=cenimas.filter(movie =>movie.id!=id);
+        
+        setCenimas(newMovieList)
+    }
     return (
          <>
             <div className="t">
                 <Logo/>
-                {name.map(movie=>
+                {cenimas.map(movie=>
                      <Movierow
                         name={movie.name}
                         description={movie.description}
@@ -48,11 +39,16 @@ export default function App(){
                         year={movie.year}
                         duration={movie.duration}
                         onDelete={()=>handleDeleteMovie(movie.id)}
-                    />
-                
-                 )}                                                                                                                                                                                                                                                                                                                 
+                        like={movie.votes}
+                        onUpdateRating={handleRating}
+                        movie_id={movie.id} 
+                      />
+                    
+                 )}  
+                 <Form/>
+                                                                                                                                                                                                                                                                                                             
              </div>
         </>
     );
 };
-export default Buttons
+  

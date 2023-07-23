@@ -5,7 +5,8 @@ export  const movies = [{
     description: 'Dasara is a high adrenaline action, revenge drama that is set in the backdrop of singareni coal mines.',
     image: "https://static.toiimg.com/photo/msid-99053157/99053157.jpg",
     genere:"Drama Revenge",
-    year:"2023"
+    year:"2023",
+    votes:0
 }, {
     id: 1, 
     name: 'Bahubali',
@@ -13,7 +14,9 @@ export  const movies = [{
     description: 'Prabhas',
     image: "https://i.pinimg.com/originals/6a/88/6a/6a886ab19dbff14203ff6e6b5f73fcf2.jpg",
     genere:"Epic Action Film",
-    year:"2015"
+    year:"2015",
+    votes:0
+    
 }, {
     id: 2, 
     name: 'Ninnu kori',
@@ -21,7 +24,8 @@ export  const movies = [{
     description: 'The plot revolves around Uma (Nani), Pallavi (Thomas), and Arun (Pinisetty). When Uma declines her proposal to elope, Pallavi marries Arun and emigrates to the US.',
     image: "https://e0.pxfuel.com/wallpapers/1005/280/desktop-wallpaper-ninnu-kori-nani-genelia.jpg",
     genere:"Romantic and comedy",
-    year:"2017"
+    year:"2017",
+    votes:0
 }, {
     id: 3, 
     name: 'Premam poojyamam',
@@ -29,7 +33,8 @@ export  const movies = [{
     description: "he film marked actor Prem's 25th film in his film career. The film had newbie Brinda Acharya and Aindrita Ray as the female leads.",
     image: "https://static.toiimg.com/photo/87648874.jpeg",
     genere:"Romantic",
-    year:"2021"
+    year:"2021",
+    votes:0
 }, {
     id: 4, 
     name: 'Salaar',
@@ -37,7 +42,8 @@ export  const movies = [{
     duration:' Not released yet',
     image: 'https://w0.peakpx.com/wallpaper/826/845/HD-wallpaper-prabhas-baahubali-film-hero-indian-film-kgf-kgf2-pan-salaar-trend.jpg',
     genere: 'Action drama',
-    year:2023
+    year:"2023",
+    votes:0
 }, {
     id: 5, 
     name: 'Majili',
@@ -45,7 +51,8 @@ export  const movies = [{
     duration:'2h 30min',
     image: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/6069ba7fb32fdfcf2501135df224fa844d25008a7f54548bce2a8ac7fa6acdbb._RI_TTW_.jpg',
     genere: 'Romantic sports drama',
-    year:2017
+    year:"2017",
+    votes:0
 }, {
     id: 6, 
     name: 'Fidaa',
@@ -53,7 +60,8 @@ export  const movies = [{
     duration:'2h 30min',
     image: 'https://m.media-amazon.com/images/M/MV5BNjlkNWI1OGUtMzU0YS00M2Y4LTg2YTYtOTVhNDA4N2IzZGVmXkEyXkFqcGdeQXVyNTgxODY5ODI@._V1_FMjpg_UX1000_.jpg',
     genere: 'Romantic  drama',
-    year:2019
+    year:"2019",
+    votes:0
 }, {
     id: 7, 
     name: 'Love story',
@@ -61,7 +69,8 @@ export  const movies = [{
     duration:'2h 30min',
     image: 'https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/love-story-et00124288-22-01-2021-07-26-26.jpg',
     genere:'Love drama',
-    year:2021
+    year:"2021",
+    votes:0
 }, {
     id: 8, 
     name: 'Stalin',
@@ -69,7 +78,8 @@ export  const movies = [{
     duration:'2h 30min',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ktiMAhZ4P6rUatGxIXZJSBZgnc3ZhrKbHw&usqp=CAU',
     genere: 'Political drama',
-    year:2006
+    year:"2006",
+    votes:0
 }, {
     id: 9, 
     name: 'Adhuri',
@@ -77,6 +87,7 @@ export  const movies = [{
     duration:'2h 30min',
     image: "https://m.media-amazon.com/images/M/MV5BYjBlNTU4MTctNWZjNS00MDY3LTg5NTYtNGMyNTc5NzYwN2IxXkEyXkFqcGdeQXVyMzQzMDc2MDk@._V1_FMjpg_UX1000_.jpg",
     genere: 'Romantic  drama',
-    year:2012
+    year:"2012",
+    votes:0
 }];
 

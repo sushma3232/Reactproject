@@ -1,4 +1,4 @@
-import Buttons from "./page.js"
+import Buttons from "./button.js"
 import Delete from "./delete.js"
 const Movierow=(props)=>{
     return(
@@ -11,7 +11,9 @@ const Movierow=(props)=>{
                 <p> {props.year}|{props.duration}|{props.genere} </p>
                 <h3> Description</h3>
                 <p>{props.description}</p>
-               
+                <Buttons
+                    {...props}
+                />
                  <Delete
                         {...props}
                     />  
